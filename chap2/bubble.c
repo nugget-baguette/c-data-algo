@@ -8,6 +8,10 @@ int main() {
     scanf("%d", &N);
     int *p = (int *)calloc(N, sizeof(int));
 
+    if (p == NULL) {
+        return 1;
+    }
+
     for (int i = 0; i < N; ++i) {
         scanf("%d", &p[i]);
     }
@@ -23,6 +27,7 @@ int main() {
     printf("\n");
 
     free(p);
+    return 0;
 }
 
 void swap(int *a, int *b) {
