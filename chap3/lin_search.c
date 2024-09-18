@@ -18,6 +18,6 @@ int main() {
         if (p[i++] == T) break;
     }
     --i;
-    printf("%d\n" ,i == N ? -1 : i);
+    printf("%d\n", i == N ? -1 : i);
     return 0;
 }
